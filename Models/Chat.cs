@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-[JsonObject, Serializable]
+[Serializable]
 public class Chat
 {
     public string Name { get; set; }
