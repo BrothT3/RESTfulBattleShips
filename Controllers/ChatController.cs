@@ -9,21 +9,22 @@ public class ChatController : Controller
     public ChatController(ChatLogDB chatLog)
     {
         this.chatLog = chatLog;
+       
     }
 
     [HttpGet]
     public JsonResult Get()
     {
-      
+        //return Json(chatLog.Last());
         if (chatLog.Count > 1)
         {
             return Json(chatLog.Last());
         }
         else
         {
-            return Json("Chatlog is empty");
+            return Json("Chatlog is empty");         
         }
-       
+
     }
 
     [HttpPost("message")]
