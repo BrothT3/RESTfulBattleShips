@@ -6,7 +6,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<PlayerDB>();
 builder.Services.AddSingleton<ChatLogDB>();
 
 var app = builder.Build();
